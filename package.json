@@ -5,11 +5,12 @@
   "license": "MIT",
   "scripts": {
     "lint:fix": "eslint --fix src --ext ts,tsx",
-    "dev":"ts-node-dev",
+    "dev": "ts-node-dev",
     "test": "jest",
     "typeorm": "ts-node-dev ./node_modules/typeorm/cli"
   },
   "devDependencies": {
+    "@types/express": "^4.17.12",
     "@types/jest": "^26.0.21",
     "@types/node": "^14.14.35",
     "jest": "^26.6.3",

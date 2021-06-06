@@ -6,13 +6,13 @@ import {
   ManyToMany,
   PrimaryGeneratedColumn,
   UpdateDateColumn,
-} from 'typeorm';
+} from "typeorm";
 
-import { Game } from '../../games/entities/Game';
+import { Game } from "../../games/entities/Game";
 
-@Entity('users')
-export class User {
-  @PrimaryGeneratedColumn('uuid')
+@Entity("users")
+class User {
+  @PrimaryGeneratedColumn("uuid")
   id: string;
 
   @Column()
@@ -34,3 +34,5 @@ export class User {
   @UpdateDateColumn()
   updated_at: Date;
 }
+
+export { User };
