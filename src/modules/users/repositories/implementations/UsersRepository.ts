@@ -22,7 +22,7 @@ class UsersRepository implements IUsersRepository {
     return user as User;
   }
   async findAllUsersOrderedByFirstName(): Promise<User[]> {
-    return this.repository.query("select * from users order by first_name"); // Complete usando raw query
+    return await this.repository.query("select * from users order by first_name"); // Complete usando raw query
   }
 
   async findUserByFullName({
